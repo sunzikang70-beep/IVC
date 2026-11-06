@@ -1,0 +1,41 @@
+{
+  "arms": 13,
+  "common_target_conditions": 24144,
+  "physical_targets": 4024,
+  "objects": 21,
+  "conditions_per_arm": {
+    "A ordinary ranking": 24144,
+    "B fixed residual": 24144,
+    "C state residual": 24144,
+    "D joint (frozen run)": 24144,
+    "D joint (ours)": 24144,
+    "Filtered P2P s0.25": 24144,
+    "Filtered P2P s0.50": 24144,
+    "Filtered P2P s1.00": 24144,
+    "Initial": 24144,
+    "Locked r4 primary (selected_risk_stratified)": 24144,
+    "P2P s0.25": 24144,
+    "P2P s0.50": 24144,
+    "P2P s1.00": 24144
+  },
+  "joint_frozen_vs_samebank_max_abs_AR_diff": 0.0,
+  "joint_frozen_vs_samebank_action_mismatch": 0,
+  "initial_arm_equals_initial_columns_max_abs": 1.1102230246251565e-16,
+  "primary_endpoint": {
+    "mean_diff": 3.099036022180494,
+    "ci_low": 2.4891839087532603,
+    "ci_high": 3.7150022332462824,
+    "objects": 21,
+    "objects_better": 21,
+    "bootstrap_p_two_sided": 0.0
+  },
+  "primary_classification": "EXTERNAL_GAIN: D improves AR over the initializer (95% object-cluster CI above 0).",
+  "noninferiority_margin_pp": -0.5,
+  "best_fixed_post_hoc": "Filtered P2P s1.00",
+  "bootstrap_draws": 20000,
+  "seed": 20261104,
+  "input_sha256": {
+    "frozen_outcomes.csv": "82d77b63652fba6081c08a261d3b3809d837d4886e8b60d02c425d0bbc673e3b",
+    "same_bank_outcomes.csv": "43cf00c666bbf1b5a845e269515d97d0bd0131ac5a9bfb64b5b211325844c12a"
+  }
+}

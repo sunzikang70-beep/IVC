@@ -1,0 +1,150 @@
+{
+  "status": "LOCKED_BEFORE_ANY_R4_OUTPUT_ON_YCBV",
+  "locked_at_utc": "2026-11-04T02:37:01.682572+00:00",
+  "smoke": false,
+  "purpose": "Independent external validation of the frozen r4 deployment artifact on a new dataset/sensor/initializer.",
+  "dataset": {
+    "name": "YCB-V",
+    "split": "test",
+    "objects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "pool_targets": 4102,
+    "matched_targets": 4024,
+    "unmatched_targets": 78,
+    "images": 900
+  },
+  "initializer": "CosyPose ECCV'20 synt+real single-view public BOP submission, with its instance masks",
+  "regimes": {
+    "native": {
+      "rotation_deg": 0.0,
+      "translation_mm": 0.0,
+      "seed": 20261016
+    },
+    "mild": {
+      "rotation_deg": 5.0,
+      "translation_mm": 5.0,
+      "seed": 20261016
+    },
+    "hard": {
+      "rotation_deg": 15.0,
+      "translation_mm": 15.0,
+      "seed": 20261017
+    }
+  },
+  "depth_conditions": [
+    "native_depth",
+    "local_outlier_30pct"
+  ],
+  "pose_protocol": "external_model_origin_decoupled_v1",
+  "candidate_actions": [
+    "protocolF_se3_trust_p2p_s025",
+    "protocolF_se3_trust_p2p_s050",
+    "protocolF_se3_trust_p2p_s100",
+    "protocolF_se3_trust_filtered_s025",
+    "protocolF_se3_trust_filtered_s050",
+    "protocolF_se3_trust_filtered_s100"
+  ],
+  "deployment_model": {
+    "path": "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\development_candidate.joblib",
+    "sha256": "a3836d3bfbb0dda4927578fdfb53389830fe0cff2bdc439f46de8cdcb2a5917c",
+    "training_objects": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30
+    ],
+    "policies": {
+      "conditional_residual_legacy": {
+        "risk_limit": 0.3,
+        "component_loss": 0.01,
+        "continuous_weight": 0.005,
+        "disabled": false
+      },
+      "conditional_residual_joint": {
+        "risk_limit": 0.3,
+        "component_loss": 0.01,
+        "continuous_weight": 0.005,
+        "disabled": false
+      },
+      "stratified_only": {
+        "policy_id": 11,
+        "risk_limit": 0.3,
+        "component_loss": 0.01,
+        "continuous_weight": 0.005,
+        "disabled": false
+      },
+      "selected_risk_only": {
+        "policy_id": 11,
+        "risk_limit": 0.3,
+        "component_loss": 0.01,
+        "continuous_weight": 0.005,
+        "disabled": false
+      },
+      "selected_risk_stratified": {
+        "policy_id": 0,
+        "risk_limit": 0.1,
+        "component_loss": 0.0,
+        "continuous_weight": 0.0,
+        "disabled": true
+      }
+    }
+  },
+  "fitting_on_ycbv": "none",
+  "tuning_on_ycbv": "none",
+  "primary_endpoint": "Object-equal BOP-style AR (mean of VSD/MSSD/MSPD recalls), D = conditional_residual_joint minus the initializer, pooled over the 3 regimes x 2 depth conditions; 95% CI from a 21-object cluster bootstrap (20000 draws, seed 20261104).",
+  "primary_decision_rule": {
+    "gain": "CI lower bound > 0",
+    "harm": "CI upper bound < 0",
+    "non_inferior": "CI includes 0 and lower bound >= -0.5 pp",
+    "inconclusive": "CI includes 0 and lower bound < -0.5 pp"
+  },
+  "secondary": [
+    "D minus each fixed trust-region candidate",
+    "D minus the best fixed candidate (chosen post hoc on YCB-V, favouring the baseline)",
+    "D minus A (ordinary ranking, same bank and policy)",
+    "update rate and accepted ADD-S regression rate",
+    "regime and depth strata",
+    "per-gate pass rates (domain gate expected to matter)"
+  ],
+  "evaluation": "BOP19 VSD/MSSD/MSPD with official thresholds; VSD visibility from native sensor depth for both depth conditions.",
+  "prior_use_of_ycbv": "YCB-V was the external set of the earlier Protocol G method; r4 features, candidates and policies were fixed on T-LESS and no r4 result on YCB-V has been inspected."
+}

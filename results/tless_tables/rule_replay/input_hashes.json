@@ -1,0 +1,22 @@
+{
+  "D:\\6D_pose\\codex_paper_workspace\\work\\audit_joint_optimization_headroom.py": "d979a9a999e8e9f760ae3d93ac5e9c3043639ebb0b7fbe1c22c5e1aea30829c2",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\bop_aware_state_residual_plan_20261019.json": "42862b28851239ddaea79de0115ce0e2125cf309b97508ee3c1290be3d1cfe34",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\same_bank_residual_ablation_20261026_r1\\per_target_outcomes.csv": "f64e53e3cad6e90ecbe4bd4b25c2bb1df5b7644d217d3223a485045481a1dd1b",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\development_candidate.joblib": "a3836d3bfbb0dda4927578fdfb53389830fe0cff2bdc439f46de8cdcb2a5917c",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\outer_oof_predictions.csv": "3156c7fabcfa88024092471375e9a626d5f48f2f92d862adf9958e5cf333641a",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\observable_candidate_features.csv": "5bf781524e846f097eafa473f5b2ada03f246badf1b966576195d400d2e8b322",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\locked_development_instances.csv": "7f49fc255f09c1f10d9050a21524ab9848f872bb0a8dbc644016fd686a07a1c1",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\development_bop_labels.csv": "e5d964bf7f4075f97e44ab40b0a5f071938565be7f7e628126b5dda463307ed3",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen5_20261021_r4\\observable_candidate_features.csv": "307ab6efd6ec8cf786952232198f5a17be95e9a5f30c9a1bd4692911ce16376b",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen5_20261021_r4\\locked_holdout_instances.csv": "9e810c30405fdce93ec9a5ba4ea4458dd0c68ac9177ad93690fec8fb274c4014",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen5_20261021_r4\\holdout_bop_labels.csv": "0186f5ba7f24dbcd8b6789278b647ac14bb8d3d92bbccf6df1865cff99cbe7e0",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen3_20261023_r1\\observable_candidate_features.csv": "40645c47c7ebd0c6351f60f04f18855d92b4df1d40d847d36c4ebe97a6a63a3e",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen3_20261023_r1\\locked_holdout_instances.csv": "e1e73d7c3e2756a94348b095a5b02e927a4f4079774463753373a6f036adb596",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen3_20261023_r1\\holdout_bop_labels.csv": "5632bdbb8949a9dd7bf9278d696143b513ecfd119c93665c237be78e71a82b1f",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\run_same_bank_residual_ablation.py": "999ef317edc11186b90d362822b286cc5062dc3effd517dc52389a613e880b49",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_group_oof.py": "ec628b3f17405cdf6f4bc06d629a3e8ba68b81cdadc7a1f1c27739b419d18406",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_state_residual.py": "5c75bd6feea03c1964f4490bead3062bebac724195fee159a2960a2a7afb0bdf",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_tail_risk_v2.py": "f569b048fc419602903a5d173b1e0b8989995b9681aa68000a99748e2ca38983",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_selective_calibration.py": "08e6b4e9b5c6febfdcfb33f7749b0b3d5a5378d6c88b26b991d951af980689b8",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\test_joint_optimization_headroom.py": "263620f984bfeef43bb03128f49db65fc3b5ae476b165b403937052f97967161"
+}

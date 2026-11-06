@@ -1,0 +1,22 @@
+{
+  "status": "frozen_after_development",
+  "frozen_on": "2026-09-04",
+  "method": "protocolB_e2e_gate_p2p_direct_dual_filter_r035",
+  "safety_trunk": "protocolB_e2e_open3d_point_to_point_icp",
+  "gate": "existing_gt_free_depth_reliability_gate",
+  "filter_scope": [
+    "target_points",
+    "source_visibility_depth_support"
+  ],
+  "reliability_keep_rule": "reliability > 0.35",
+  "candidate_initialization": "same_initial_pose_as_p2p_trunk",
+  "minimum_filtered_target_points": 300,
+  "minimum_filtered_source_points": 300,
+  "minimum_target_retention_ratio": 0.25,
+  "fallback": "return_p2p_trunk",
+  "development_objects": [2, 4, 6, 7, 9, 11, 14, 17, 20, 30],
+  "development_frames": 99,
+  "development_conditions": 891,
+  "selection_metric": "controlled_protocol_bop19_style_mean_AR",
+  "selection_warning": "Do not tune this configuration on untouched validation objects."
+}

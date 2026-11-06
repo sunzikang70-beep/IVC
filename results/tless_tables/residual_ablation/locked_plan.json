@@ -1,0 +1,184 @@
+{
+  "status": "LOCKED_BEFORE_NEW_ABLATION_SELECTIONS",
+  "arms": [
+    "A_delta_rank",
+    "B_fixed_residual",
+    "C_state_residual",
+    "D_joint_full",
+    "C_state_joint_gate",
+    "D_joint_legacy_gate"
+  ],
+  "primary": [
+    "A_delta_rank",
+    "B_fixed_residual",
+    "C_state_residual",
+    "D_joint_full"
+  ],
+  "paired_comparisons": [
+    [
+      "B_fixed_residual",
+      "A_delta_rank"
+    ],
+    [
+      "C_state_residual",
+      "B_fixed_residual"
+    ],
+    [
+      "D_joint_full",
+      "C_state_residual"
+    ],
+    [
+      "D_joint_legacy_gate",
+      "C_state_residual"
+    ],
+    [
+      "C_state_joint_gate",
+      "C_state_residual"
+    ],
+    [
+      "D_joint_full",
+      "D_joint_legacy_gate"
+    ],
+    [
+      "D_joint_full",
+      "C_state_joint_gate"
+    ]
+  ],
+  "fixed_policy": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "threshold_grid": 12,
+  "raw_heads_refit": false,
+  "candidate_generation": false,
+  "holdout_tuning": false,
+  "bootstrap_samples": 20000,
+  "seed": 20261026,
+  "inventory": [
+    {
+      "bank": "development22",
+      "candidates": 8796,
+      "target_conditions": 1466,
+      "physical_target_instances": 629,
+      "unique_rgbd_images": 584,
+      "objects": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "bank": "holdout5",
+      "candidates": 7920,
+      "target_conditions": 1320,
+      "physical_target_instances": 220,
+      "unique_rgbd_images": 204,
+      "objects": [
+        5,
+        13,
+        18,
+        21,
+        27
+      ]
+    },
+    {
+      "bank": "added3",
+      "candidates": 2196,
+      "target_conditions": 366,
+      "physical_target_instances": 61,
+      "unique_rgbd_images": 61,
+      "objects": [
+        1,
+        8,
+        22
+      ]
+    }
+  ],
+  "state_residual_plan": {
+    "status": "LOCKED_BEFORE_STATE_RESIDUAL_OUTER_EVALUATION",
+    "scope": "exploratory_reusing_inspected_22_object_development_not_independent_confirmation",
+    "variants": [
+      "conditional_residual_legacy",
+      "conditional_residual_joint"
+    ],
+    "unchanged": [
+      "six_frozen_candidates",
+      "191_observable_features",
+      "raw_delta_and_probability_models",
+      "selective_probability_calibration",
+      "risk_bias_guard",
+      "five_outer_object_folds",
+      "three_inner_object_folds",
+      "native_sensor_BOP_reference_depth"
+    ],
+    "excluded_objects": [
+      5,
+      13,
+      18,
+      21,
+      27
+    ],
+    "residual_quantile": 0.75,
+    "quantile_model": {
+      "max_iter": 60,
+      "max_leaf_nodes": 5,
+      "min_samples_leaf": 40,
+      "learning_rate": 0.06,
+      "l2_regularization": 5.0,
+      "max_bins": 64,
+      "early_stopping": false
+    },
+    "direction": "AR_overprediction_and_ADD_underprediction; nonnegative_empirical_guard_not_a_formal_confidence_bound",
+    "calibration": "three_object_fold_crossfit_of_quantile_models_on_training_raw_OOF_residuals; nonnegative_weighted_q75_offset; refit_on_all_training_OOF_residuals",
+    "residual_meta_caveat": "raw_OOF_regressors_are_not_refit_inside_the_residual_offset_crossfit; outer_and_policy_validation_objects_are_fully_excluded_from_bundle_training; no_conformal_guarantee",
+    "low_support_fallback": 0.35,
+    "joint_continuous_weight": 0.005,
+    "continuous_minimum_ADD_gain_mm": 0.25,
+    "risk_limits": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "component_ar_loss_limits": [
+      0.0,
+      0.01
+    ],
+    "continuous_gain_weights": [
+      0.0,
+      0.005
+    ],
+    "inner_constraints": {
+      "minimum_target_update_fraction": 0.05,
+      "maximum_regression_fraction_among_accepted": 0.2,
+      "every_cohort_ADD_delta_at_most": 0.0,
+      "every_cohort_mean_AR_delta_at_least": 0.0
+    },
+    "failure_policy": "disabled_policy_keeps_initializer; no_outer_result_retuning; preserve_all_artifacts",
+    "promotion": "never_automatic; no_cloud; no_real_platform; no_final_holdout_read"
+  },
+  "primary_estimand": "equal_object_paired_AR_mean; pooled_secondary",
+  "joint_bridge": "score_by_gate_2x2",
+  "inference_scope": "retrospective_exploratory_not_new_confirmation",
+  "source_model_sha256": "a3836d3bfbb0dda4927578fdfb53389830fe0cff2bdc439f46de8cdcb2a5917c"
+}

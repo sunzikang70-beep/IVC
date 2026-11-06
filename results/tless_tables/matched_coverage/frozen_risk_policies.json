@@ -1,0 +1,170 @@
+{
+  "A_delta_rank": {
+    "0.05": {
+      "disabled": true,
+      "basis": "utility",
+      "threshold": null,
+      "budget": 0.05,
+      "reason": "no_development_policy_satisfies_risk_coverage_and_cohort_constraints"
+    },
+    "0.1": {
+      "basis": "utility",
+      "threshold": 0.028374287117075982,
+      "quantile": 0.35000000000000003,
+      "disabled": false,
+      "budget": 0.1,
+      "development_targets": 1466,
+      "development_updates": 552,
+      "development_risk": 0.09782608695652174,
+      "development_AR_gain_equal_object": 0.023451396380530457
+    },
+    "0.15": {
+      "basis": "utility",
+      "threshold": 0.009783219471246147,
+      "quantile": 0.125,
+      "disabled": false,
+      "budget": 0.15,
+      "development_targets": 1466,
+      "development_updates": 743,
+      "development_risk": 0.11036339165545088,
+      "development_AR_gain_equal_object": 0.025171342041909458
+    },
+    "0.2": {
+      "basis": "utility",
+      "threshold": 0.009783219471246147,
+      "quantile": 0.125,
+      "disabled": false,
+      "budget": 0.2,
+      "development_targets": 1466,
+      "development_updates": 743,
+      "development_risk": 0.11036339165545088,
+      "development_AR_gain_equal_object": 0.025171342041909458
+    }
+  },
+  "B_fixed_residual": {
+    "0.05": {
+      "disabled": true,
+      "basis": "utility",
+      "threshold": null,
+      "budget": 0.05,
+      "reason": "no_development_policy_satisfies_risk_coverage_and_cohort_constraints"
+    },
+    "0.1": {
+      "basis": "predicted_risk",
+      "threshold": -0.2962762692724285,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.1,
+      "development_targets": 1466,
+      "development_updates": 510,
+      "development_risk": 0.09019607843137255,
+      "development_AR_gain_equal_object": 0.018520476780747513
+    },
+    "0.15": {
+      "basis": "predicted_risk",
+      "threshold": -0.2962762692724285,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.15,
+      "development_targets": 1466,
+      "development_updates": 510,
+      "development_risk": 0.09019607843137255,
+      "development_AR_gain_equal_object": 0.018520476780747513
+    },
+    "0.2": {
+      "basis": "predicted_risk",
+      "threshold": -0.2962762692724285,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.2,
+      "development_targets": 1466,
+      "development_updates": 510,
+      "development_risk": 0.09019607843137255,
+      "development_AR_gain_equal_object": 0.018520476780747513
+    }
+  },
+  "C_state_residual": {
+    "0.05": {
+      "disabled": true,
+      "basis": "utility",
+      "threshold": null,
+      "budget": 0.05,
+      "reason": "no_development_policy_satisfies_risk_coverage_and_cohort_constraints"
+    },
+    "0.1": {
+      "basis": "predicted_risk",
+      "threshold": -0.2962762692724285,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.1,
+      "development_targets": 1466,
+      "development_updates": 609,
+      "development_risk": 0.09852216748768473,
+      "development_AR_gain_equal_object": 0.02251517066227379
+    },
+    "0.15": {
+      "basis": "predicted_risk",
+      "threshold": -0.2962762692724285,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.15,
+      "development_targets": 1466,
+      "development_updates": 609,
+      "development_risk": 0.09852216748768473,
+      "development_AR_gain_equal_object": 0.02251517066227379
+    },
+    "0.2": {
+      "basis": "predicted_risk",
+      "threshold": -0.2962762692724285,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.2,
+      "development_targets": 1466,
+      "development_updates": 609,
+      "development_risk": 0.09852216748768473,
+      "development_AR_gain_equal_object": 0.02251517066227379
+    }
+  },
+  "D_joint_full": {
+    "0.05": {
+      "disabled": true,
+      "basis": "utility",
+      "threshold": null,
+      "budget": 0.05,
+      "reason": "no_development_policy_satisfies_risk_coverage_and_cohort_constraints"
+    },
+    "0.1": {
+      "basis": "predicted_risk",
+      "threshold": -0.2967126666383035,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.1,
+      "development_targets": 1466,
+      "development_updates": 639,
+      "development_risk": 0.09859154929577464,
+      "development_AR_gain_equal_object": 0.023085794295789806
+    },
+    "0.15": {
+      "basis": "predicted_risk",
+      "threshold": -0.2967126666383035,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.15,
+      "development_targets": 1466,
+      "development_updates": 639,
+      "development_risk": 0.09859154929577464,
+      "development_AR_gain_equal_object": 0.023085794295789806
+    },
+    "0.2": {
+      "basis": "predicted_risk",
+      "threshold": -0.2967126666383035,
+      "quantile": 0.0,
+      "disabled": false,
+      "budget": 0.2,
+      "development_targets": 1466,
+      "development_updates": 639,
+      "development_risk": 0.09859154929577464,
+      "development_AR_gain_equal_object": 0.023085794295789806
+    }
+  }
+}

@@ -1,0 +1,43 @@
+scope,metric,arm,value,conditions,ci_low,ci_high,objects_better
+all,mean_adds_mm,A ordinary ranking,274.9727918103679,1686.0,,,
+all,mean_adds_mm,D joint (ours),275.0638579005207,1686.0,,,
+all,mean_adds_mm,Filtered P2P s1.00,275.08305181182004,1686.0,,,
+all,mean_adds_mm,Initial,275.47644444662717,1686.0,,,
+all,mean_adds_mm,A ordinary ranking - Initial,-0.5036526362593077,,-0.7284330053484167,-0.2891547250103699,8.0
+all,mean_adds_mm,A ordinary ranking - Filtered P2P s1.00,-0.11026000145218823,,-0.19127753519962842,-0.02253163113791956,7.0
+all,mean_adds_mm,A ordinary ranking - D joint (ours),-0.09106609015285488,,-0.14557064567542977,-0.04003375212508803,7.0
+all,mean_adds_d,A ordinary ranking,181.21409904227338,1686.0,,,
+all,mean_adds_d,D joint (ours),181.3004113211466,1686.0,,,
+all,mean_adds_d,Filtered P2P s1.00,181.32372173471768,1686.0,,,
+all,mean_adds_d,Initial,181.74922338741902,1686.0,,,
+all,mean_adds_d,A ordinary ranking - Initial,-0.53512434514565,,-0.7851406052229792,-0.29333774191706313,8.0
+all,mean_adds_d,A ordinary ranking - Filtered P2P s1.00,-0.10962269244431692,,-0.184484848199663,-0.03280537442021418,7.0
+all,mean_adds_d,A ordinary ranking - D joint (ours),-0.08631227887323364,,-0.13642857942273887,-0.0369000294460165,7.0
+all,rec01,A ordinary ranking,57.59495056831314,1686.0,,,
+all,rec01,D joint (ours),57.001046410455494,1686.0,,,
+all,rec01,Filtered P2P s1.00,57.37873316168876,1686.0,,,
+all,rec01,Initial,54.939113251770564,1686.0,,,
+all,rec01,A ordinary ranking - Initial,2.655837316542573,,0.3604651162790691,6.132493412384715,5.0
+all,rec01,A ordinary ranking - Filtered P2P s1.00,0.21621740662438327,,-0.047348484848484806,0.5968992248062008,3.0
+all,rec01,A ordinary ranking - D joint (ours),0.5939041578576456,,0.04844961240310086,1.3514799154334025,3.0
+init<0.1d,mean_adds_mm,A ordinary ranking,4.300895621284998,1028.0,,,
+init<0.1d,mean_adds_mm,D joint (ours),4.468683172064809,1028.0,,,
+init<0.1d,mean_adds_mm,Filtered P2P s1.00,4.362140582133121,1028.0,,,
+init<0.1d,mean_adds_mm,Initial,5.086256695733271,1028.0,,,
+init<0.1d,mean_adds_mm,A ordinary ranking - Initial,-0.7853610744482724,,-1.0865167213615474,-0.5903036561680157,8.0
+init<0.1d,mean_adds_mm,A ordinary ranking - Filtered P2P s1.00,-0.06124496084812292,,-0.18325012845285527,0.09388492205557808,6.0
+init<0.1d,mean_adds_mm,A ordinary ranking - D joint (ours),-0.16778755077981017,,-0.30587143678127465,-0.07182091444521149,8.0
+init<0.1d,mean_adds_d,A ordinary ranking,3.872319450847582,1028.0,,,
+init<0.1d,mean_adds_d,D joint (ours),4.001128535709333,1028.0,,,
+init<0.1d,mean_adds_d,Filtered P2P s1.00,3.97260009881711,1028.0,,,
+init<0.1d,mean_adds_d,Initial,4.618040613976985,1028.0,,,
+init<0.1d,mean_adds_d,A ordinary ranking - Initial,-0.7457211631294034,,-0.9137231747609115,-0.5777916856887314,8.0
+init<0.1d,mean_adds_d,A ordinary ranking - Filtered P2P s1.00,-0.10028064796952785,,-0.19703092072673528,0.007258458559329228,6.0
+init<0.1d,mean_adds_d,A ordinary ranking - D joint (ours),-0.12880908486175108,,-0.18538480627574974,-0.07622817850948789,8.0
+init<0.1d,rec01,A ordinary ranking,100.0,1028.0,,,
+init<0.1d,rec01,D joint (ours),100.0,1028.0,,,
+init<0.1d,rec01,Filtered P2P s1.00,99.58176691729324,1028.0,,,
+init<0.1d,rec01,Initial,100.0,1028.0,,,
+init<0.1d,rec01,A ordinary ranking - Initial,0.0,,0.0,0.0,0.0
+init<0.1d,rec01,A ordinary ranking - Filtered P2P s1.00,0.41823308270676623,,0.0,1.0761278195488708,2.0
+init<0.1d,rec01,A ordinary ranking - D joint (ours),0.0,,0.0,0.0,0.0

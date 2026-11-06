@@ -1,0 +1,18 @@
+{
+  "decision": "FAIL",
+  "primary": {
+    "comparison": "SARef_obs - A_obs",
+    "auc_difference_pp": -0.0405832005629625,
+    "ci95_low": -0.1037517741955398,
+    "ci95_high": 0.01919441403222948
+  },
+  "co_primary": {
+    "comparison": "SARef_obs - A",
+    "auc_difference_pp": -0.05030694084410256,
+    "ci95_low": -0.11070002453866896,
+    "ci95_high": 0.007090924045980874
+  },
+  "rule": "PASS iff the 95% lower bound of BOTH differences in gain AUC is > 0; otherwise FAIL and stop",
+  "evaluated_at_utc": "2026-11-05T02:03:24.592265+00:00",
+  "selftest": false
+}

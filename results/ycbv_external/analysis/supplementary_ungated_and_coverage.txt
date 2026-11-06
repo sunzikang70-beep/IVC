@@ -1,0 +1,31 @@
+D 3.099 updates 64.0
+F 4.248
+argmax p_lcb_delta_joint_utility full coverage 3.738 regress% 6.8
+   cov 0.20: gain 1.597  accepted-regress 0.7%
+   cov 0.40: gain 2.624  accepted-regress 0.8%
+   cov 0.60: gain 3.296  accepted-regress 1.1%
+   cov 0.64: gain 3.370  accepted-regress 1.1%
+   cov 0.80: gain 3.589  accepted-regress 1.8%
+   cov 0.90: gain 3.696  accepted-regress 3.4%
+   cov 1.00: gain 3.738  accepted-regress 6.8%
+argmax pred_mean full coverage 4.1 regress% 7.0
+   cov 0.20: gain 1.619  accepted-regress 0.8%
+   cov 0.40: gain 2.673  accepted-regress 0.8%
+   cov 0.60: gain 3.498  accepted-regress 1.3%
+   cov 0.64: gain 3.626  accepted-regress 1.3%
+   cov 0.80: gain 3.956  accepted-regress 2.1%
+   cov 0.90: gain 4.064  accepted-regress 3.7%
+   cov 1.00: gain 4.100  accepted-regress 7.0%
+argmax p_lcb_delta_AR_mean full coverage 3.713 regress% 6.8
+   cov 0.20: gain 1.594  accepted-regress 0.8%
+   cov 0.40: gain 2.634  accepted-regress 0.8%
+   cov 0.60: gain 3.265  accepted-regress 1.1%
+   cov 0.64: gain 3.331  accepted-regress 1.2%
+   cov 0.80: gain 3.562  accepted-regress 1.8%
+   cov 0.90: gain 3.672  accepted-regress 3.4%
+   cov 1.00: gain 3.713  accepted-regress 6.8%
+D-F per object {1: -0.84, 2: -2.35, 3: -1.4, 4: -1.64, 5: -0.66, 6: -1.08, 7: -1.94, 8: -1.89, 9: -0.86, 10: 0.57, 11: -1.77, 12: -1.12, 13: -1.08, 14: -0.91, 15: -1.88, 16: -0.45, 17: -0.26, 18: -1.05, 19: -1.27, 20: -1.54, 21: -0.72} D>F objects 1
+native F-init 2.274 F regress% 13.8
+mild F-init 5.169 F regress% 5.8
+hard F-init 5.302 F regress% 5.7
+{'protocolF_se3_trust_p2p_s100': 0.409, 'protocolF_se3_trust_filtered_s100': 0.28, 'protocolF_se3_trust_p2p_s025': 0.114, 'protocolF_se3_trust_p2p_s050': 0.111, 'protocolF_se3_trust_filtered_s025': 0.045, 'protocolF_se3_trust_filtered_s050': 0.042}

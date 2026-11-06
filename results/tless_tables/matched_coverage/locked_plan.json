@@ -1,0 +1,170 @@
+{
+  "status": "LOCKED_BEFORE_NEW_MATCHED_RESULTS",
+  "arms": [
+    "A_delta_rank",
+    "B_fixed_residual",
+    "C_state_residual",
+    "D_joint_full"
+  ],
+  "risk_budgets": [
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "coverage_rates": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "cutoff_quantiles": [
+    0.0,
+    0.025,
+    0.05,
+    0.07500000000000001,
+    0.1,
+    0.125,
+    0.15000000000000002,
+    0.17500000000000002,
+    0.2,
+    0.225,
+    0.25,
+    0.275,
+    0.30000000000000004,
+    0.325,
+    0.35000000000000003,
+    0.375,
+    0.4,
+    0.42500000000000004,
+    0.45,
+    0.47500000000000003,
+    0.5,
+    0.525,
+    0.55,
+    0.5750000000000001,
+    0.6000000000000001,
+    0.625,
+    0.65,
+    0.675,
+    0.7000000000000001,
+    0.7250000000000001,
+    0.75,
+    0.775,
+    0.8,
+    0.8250000000000001,
+    0.8500000000000001,
+    0.875,
+    0.9,
+    0.925,
+    0.9500000000000001,
+    0.9750000000000001,
+    1.0
+  ],
+  "orderings": [
+    "utility",
+    "predicted_risk"
+  ],
+  "base_policy": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "constraints": {
+    "minimum_coverage": 0.05,
+    "cohort_AR_delta_min": 0,
+    "cohort_ADD_delta_max": 0
+  },
+  "selection_objective": "maximize_equal_object_AR_gain_then_risk_then_coverage",
+  "candidate_threshold_budget": 82,
+  "coverage_modes": [
+    "pooled_exact",
+    "object_capped"
+  ],
+  "bootstrap_samples": 10000,
+  "holdout_tuning": false,
+  "risk_guarantee": false,
+  "same_realized_test_risk_claim": false,
+  "inference": "posthoc_reused_holdout_exploratory",
+  "paired_contrasts": [
+    [
+      "D_joint_full",
+      "A_delta_rank"
+    ],
+    [
+      "C_state_residual",
+      "A_delta_rank"
+    ],
+    [
+      "C_state_residual",
+      "B_fixed_residual"
+    ],
+    [
+      "D_joint_full",
+      "C_state_residual"
+    ],
+    [
+      "D_joint_full",
+      "B_fixed_residual"
+    ]
+  ],
+  "inventory": [
+    {
+      "bank": "development22",
+      "candidates": 8796,
+      "target_conditions": 1466,
+      "physical_target_instances": 629,
+      "unique_rgbd_images": 584,
+      "objects": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "bank": "holdout5",
+      "candidates": 7920,
+      "target_conditions": 1320,
+      "physical_target_instances": 220,
+      "unique_rgbd_images": 204,
+      "objects": [
+        5,
+        13,
+        18,
+        21,
+        27
+      ]
+    },
+    {
+      "bank": "added3",
+      "candidates": 2196,
+      "target_conditions": 366,
+      "physical_target_instances": 61,
+      "unique_rgbd_images": 61,
+      "objects": [
+        1,
+        8,
+        22
+      ]
+    }
+  ]
+}

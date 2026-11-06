@@ -1,0 +1,32 @@
+{
+  "ycbv": {
+    "arms": 13,
+    "common_target_conditions": 24144,
+    "physical_targets": 4024,
+    "objects": 21,
+    "conditions_per_arm": {
+      "A ordinary ranking": 24144,
+      "B fixed residual": 24144,
+      "C state residual": 24144,
+      "D joint (frozen run)": 24144,
+      "D joint (ours)": 24144,
+      "Filtered P2P s0.25": 24144,
+      "Filtered P2P s0.50": 24144,
+      "Filtered P2P s1.00": 24144,
+      "Initial": 24144,
+      "Locked r4 primary (selected_risk_stratified)": 24144,
+      "P2P s0.25": 24144,
+      "P2P s0.50": 24144,
+      "P2P s1.00": 24144
+    },
+    "joint_frozen_vs_samebank_max_abs_AR_diff": 0.0,
+    "joint_frozen_vs_samebank_action_mismatch": 0,
+    "initial_arm_equals_initial_columns_max_abs": 1.1102230246251565e-16
+  },
+  "rule_replay_targets": 1686,
+  "rule_replay_mismatches": 2,
+  "rule_replay_extra_targets": 0,
+  "raw_utility_max_abs_diff": 1.7520707107365752e-16,
+  "init_lt_0p1d_share": 0.6097271648873073,
+  "init_gross_share": 0.20521945432977462
+}

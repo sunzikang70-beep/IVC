@@ -1,0 +1,553 @@
+{
+  "status": "COMPLETE_NESTED_OBJECT_OOF_NOT_PROMOTED",
+  "protocol": "external_model_origin_decoupled_v1",
+  "started_at_utc": "2026-10-21T01:51:38.052551+00:00",
+  "pid": 19380,
+  "method_promoted": false,
+  "new_final_holdout": false,
+  "folds": [
+    {
+      "training_objects": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30
+      ],
+      "validation_objects": [
+        6,
+        12,
+        17,
+        26
+      ],
+      "fold": 0,
+      "policies": {
+        "conditional_residual_legacy": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "conditional_residual_joint": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "stratified_only": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        },
+        "selected_risk_only": {
+          "policy_id": 11,
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "selected_risk_stratified": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        }
+      },
+      "checks": {
+        "label_blind_candidate_predictions": true,
+        "label_blind_winners": true,
+        "label_blind_choices": true,
+        "single_target_batch_invariance": true
+      },
+      "winner_training_physical_instances": 238,
+      "held_physical_instances": 121
+    },
+    {
+      "training_objects": [
+        2,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        25,
+        26,
+        28,
+        29
+      ],
+      "validation_objects": [
+        3,
+        9,
+        24,
+        30
+      ],
+      "fold": 1,
+      "policies": {
+        "conditional_residual_legacy": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "conditional_residual_joint": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "stratified_only": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        },
+        "selected_risk_only": {
+          "policy_id": 11,
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "selected_risk_stratified": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        }
+      },
+      "checks": {
+        "label_blind_candidate_predictions": true,
+        "label_blind_winners": true,
+        "label_blind_choices": true,
+        "single_target_batch_invariance": true
+      },
+      "winner_training_physical_instances": 234,
+      "held_physical_instances": 124
+    },
+    {
+      "training_objects": [
+        2,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        20,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "validation_objects": [
+        7,
+        15,
+        19,
+        23
+      ],
+      "fold": 2,
+      "policies": {
+        "conditional_residual_legacy": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "conditional_residual_joint": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "stratified_only": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        },
+        "selected_risk_only": {
+          "policy_id": 11,
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "selected_risk_stratified": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        }
+      },
+      "checks": {
+        "label_blind_candidate_predictions": true,
+        "label_blind_winners": true,
+        "label_blind_choices": true,
+        "single_target_batch_invariance": true
+      },
+      "winner_training_physical_instances": 246,
+      "held_physical_instances": 116
+    },
+    {
+      "training_objects": [
+        3,
+        6,
+        7,
+        9,
+        11,
+        12,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30
+      ],
+      "validation_objects": [
+        2,
+        4,
+        10,
+        14,
+        25
+      ],
+      "fold": 3,
+      "policies": {
+        "conditional_residual_legacy": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "conditional_residual_joint": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "stratified_only": {
+          "policy_id": 7,
+          "risk_limit": 0.2,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "selected_risk_only": {
+          "policy_id": 11,
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "selected_risk_stratified": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        }
+      },
+      "checks": {
+        "label_blind_candidate_predictions": true,
+        "label_blind_winners": true,
+        "label_blind_choices": true,
+        "single_target_batch_invariance": true
+      },
+      "winner_training_physical_instances": 229,
+      "held_physical_instances": 139
+    },
+    {
+      "training_objects": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26,
+        30
+      ],
+      "validation_objects": [
+        11,
+        16,
+        20,
+        28,
+        29
+      ],
+      "fold": 4,
+      "policies": {
+        "conditional_residual_legacy": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "conditional_residual_joint": {
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "stratified_only": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        },
+        "selected_risk_only": {
+          "policy_id": 11,
+          "risk_limit": 0.3,
+          "component_loss": 0.01,
+          "continuous_weight": 0.005,
+          "disabled": false
+        },
+        "selected_risk_stratified": {
+          "policy_id": 0,
+          "risk_limit": 0.1,
+          "component_loss": 0.0,
+          "continuous_weight": 0.0,
+          "disabled": true
+        }
+      },
+      "checks": {
+        "label_blind_candidate_predictions": true,
+        "label_blind_winners": true,
+        "label_blind_choices": true,
+        "single_target_batch_invariance": true
+      },
+      "winner_training_physical_instances": 233,
+      "held_physical_instances": 129
+    }
+  ],
+  "source_hashes": {
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_decoupled_group_oof.py": "4f9411a535a10b264c7f4e73e009f2ad7b5c97844da5e88e241bd01571430df5",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\locked_protocol.json": "fdaef870345ed4ad42cf8afd56528ae09a6fa0b7f0929103e7242757f399f1ac",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\observable_candidate_features.csv": "5bf781524e846f097eafa473f5b2ada03f246badf1b966576195d400d2e8b322",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\development_bop_labels.csv": "e5d964bf7f4075f97e44ab40b0a5f071938565be7f7e628126b5dda463307ed3",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\feature_schema.json": "d8c2c57b190d58eb4c156f9c93fe453cc7962df8a2ab67e8a9b7905a34e2fc31"
+  },
+  "completed_at_utc": "2026-10-21T02:19:31.662148+00:00",
+  "elapsed_seconds": 1673.531,
+  "final_policies": {
+    "conditional_residual_legacy": {
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "conditional_residual_joint": {
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "stratified_only": {
+      "policy_id": 11,
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "selected_risk_only": {
+      "policy_id": 11,
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "selected_risk_stratified": {
+      "policy_id": 0,
+      "risk_limit": 0.1,
+      "component_loss": 0.0,
+      "continuous_weight": 0.0,
+      "disabled": true
+    }
+  },
+  "checks": {
+    "outer_object_disjoint": true,
+    "inner_and_deeper_object_disjoint": true,
+    "from_scratch_new_protocol_models": true,
+    "no_old_calibrator_reuse": true,
+    "no_reserved_inference": true,
+    "full_candidate_BOP_labels": true,
+    "csv_round_trip": true
+  },
+  "artifact_hashes": {
+    "acceptance_funnels.csv": "2507d2c7d4a2db0ef06ba4899b7cbda1a92cbdb28528f27f3b64d922cd95c11e",
+    "all_method_oof_outcomes.csv": "7cdcadb5548218dcefa6e00420a5cf646833042929fbddeacd73036d40c9c9ba",
+    "development_candidate.joblib": "a3836d3bfbb0dda4927578fdfb53389830fe0cff2bdc439f46de8cdcb2a5917c",
+    "final_policy_grid_exploratory.csv": "2e8a248587640eb230a8ad51953d28299157e4cb67c39d293ea8f9a1f2707702",
+    "final_training_winners.csv": "d90bc80e3c7d5222a88fabdbc778ce602ec262b175708a8a8d7d7bcf417daf94",
+    "inner_policy_grid.csv": "3014add78376946d7d59fd1524304851656857943a65635867672106563fb43f",
+    "matched_and_planned_summary.csv": "493bafe4798486dd4f474ce5512c522e36d1622de93aa75ae3729f866e4b730d",
+    "nested_object_partitions.json": "5324bc3528b093d0a1578d1b9f8545dc3cae653d9df7d83b5ef554c83157085e",
+    "outer_oof_predictions.csv": "3156c7fabcfa88024092471375e9a626d5f48f2f92d862adf9958e5cf333641a",
+    "outer_oof_probability_bins.csv": "2fbc2e4d8299c3ff903b757fe632d1f96d9c7f928c876af65783f256f832a139",
+    "outer_oof_probability_metrics.csv": "6bae58bf35a4befa17ff58939f9c7276da8c5b80005bffe83dcc04d1c18277ae",
+    "outer_oof_winners.csv": "745a34f4d4d0d1dd94cb46c5601c74d7c6740b39d3573f56aeb2c5de91eda5aa",
+    "paired_object_bootstrap.csv": "5332e325c1f460f3ea95428d30621607a3ee08187df0fbc0700d9abc3afb1978",
+    "regime_gain_and_risk.png": "9d42d7a57f49b556aa151887d82ec2c67d52dc2eab9f8f244bb7f6a2d2a65bbe",
+    "regime_probability_metrics.csv": "553cfa852909861827a24ecec7e4872fbe76b35d3dd77e10651bb1c29b05d03a",
+    "report_zh.md": "be7e3bf226a329bbacc1757f9b64b74d334825a8051853e0f6b8f9a191c4873f",
+    "statistical_fallacy_scan_11.csv": "cc6600dcc04601ec13133f77fc220efaf0bc43f18e855a244a0432862c30b415",
+    "stratified_risk_tables.csv": "cca51c73f08edaa1007b6ac26dd2f172aefa62100786f6fe50f92af0a6dcb387",
+    "fold_0\\inner_0.joblib": "ac683fd4d39842ea62ec522afba759cf32f5a65ba2e11ccb6ac8f06ed39fbc51",
+    "fold_0\\inner_0_deep_0.joblib": "c39cafe709e75d5fa1c3feafb93b5b7920f511785aa5c8b782fb6fcc90ce67cf",
+    "fold_0\\inner_0_deep_1.joblib": "aa9b0fde826caba13f0b83b46806ebcceda95d9b76b9397f857e5c56f59a98a3",
+    "fold_0\\inner_0_deep_2.joblib": "1e6de543a36df5d5dca8ffb6a7d91e090ae0d391f1bca23a85236c3311d67db0",
+    "fold_0\\inner_0_training_winners.csv": "eda674a7b6e8ce5d585f0cc0fa617f76b81e078c3184a92361e048f597c08e2a",
+    "fold_0\\inner_0_winner_training_oof.csv": "8ea73adc2230c248d0896e8d62755bf272dc28801f77fc65fc599e84553dfe0f",
+    "fold_0\\inner_1.joblib": "9f9adc4d3ad8fc25abb49b75c0fb6422611cc29c0894926bdb7df409664f5749",
+    "fold_0\\inner_1_deep_0.joblib": "0556587d7a0c26da6471dc96127c9f92d17ca5b80ba84ac8a2a9eb95451ba8da",
+    "fold_0\\inner_1_deep_1.joblib": "d7f182fc5be6fa807beef530bcaebc22ad98707b7f07b33f7d51822b955f6cc5",
+    "fold_0\\inner_1_deep_2.joblib": "ac3753757201622e32c4a29922e424cd8782ea1f6512b30c1c47767d773f1420",
+    "fold_0\\inner_1_training_winners.csv": "6ff26bce4ecd8fe8f05b0d44b0c622740f216a3cded2466fe2d146f3fd5963b0",
+    "fold_0\\inner_1_winner_training_oof.csv": "234d434cb52ffac15b138790af962bd39f93a97130bc9df3c8789f29a89b045e",
+    "fold_0\\inner_2.joblib": "785694f00d06dfa163895df2a46e8d80eb46c55b7a640bfbc465ce9be8ca05a5",
+    "fold_0\\inner_2_deep_0.joblib": "5dd4b5dbb49102a476ac5099d4c3b8399a2aa7e8309761c0e8694fa496baa9e9",
+    "fold_0\\inner_2_deep_1.joblib": "c68693af9902b92ba0b64fbaefe8b2a3e77a20b15f7312c44251f62b70e05bbe",
+    "fold_0\\inner_2_deep_2.joblib": "2396a574b92d0f595f240107e588fe6ccc12fcc57433d04ad507f7a09ba2797f",
+    "fold_0\\inner_2_training_winners.csv": "799aae6d70d2d1cfa54c532b2058a9eb03ed4ec82bc8f5df7ba20c1c7f9d71b0",
+    "fold_0\\inner_2_winner_training_oof.csv": "93ab04a80dc5be74385b6adc773251c4d2d398857849a946c3df5597226bfc22",
+    "fold_0\\inner_policy_oof_predictions.csv": "d90d77a017a518c92426648632fa4f576d491e8a1ed11bec54e11b80890adcce",
+    "fold_0\\inner_policy_oof_winners.csv": "b8b3af96e1d2460f3cdb63a20da51c76312ae434f84ded6e6059efbd5a81ec46",
+    "fold_0\\outer_model.joblib": "c42d29e982c67c75c171e9985651f5c02c316a3962442aa0f4e21591e40ddb66",
+    "fold_0\\outer_training_winners.csv": "057be791f400a76200765ddb363c7c20f83277e79c5a8eaf6fafdef20e52aeeb",
+    "fold_1\\inner_0.joblib": "76c0aa5d12fdc7028b21d5b4a303339c7667e7e53ba2500e133a3ef342aa71fd",
+    "fold_1\\inner_0_deep_0.joblib": "110aec845eea7009256afcbeeaf1b3b3e66699df7cbdcb9cedb0fca8e8142f79",
+    "fold_1\\inner_0_deep_1.joblib": "9906b913a5a2f8cf56464f8ec4bf877cc68d235400941b0bf92e53abab9dedd7",
+    "fold_1\\inner_0_deep_2.joblib": "af8b6a593a4fd25ce940501b6fee16adc571e6974e2cee18e0a480f582a8fda5",
+    "fold_1\\inner_0_training_winners.csv": "95f5c2c40fa8564a0b4b710f00becd50d24bb0b239bfdca618e4b0f11753ba76",
+    "fold_1\\inner_0_winner_training_oof.csv": "23b27ab08e413fbeef3ba8e10db6dead3d49f14ef25173bd6c4400b0f04ee0c7",
+    "fold_1\\inner_1.joblib": "192f6f0f4bb2b4ceacd79d6b54ae5f07342c71a11d8b55226de085fadce7be44",
+    "fold_1\\inner_1_deep_0.joblib": "75fed0ca32ea0910dae11b2bfd98d1eb84f4e13cb99ca638c25de79a27e0f50a",
+    "fold_1\\inner_1_deep_1.joblib": "c5063dac57b2a12136a6ead9406cfbe8cfdf678f07fac6edaa4c50b28505699e",
+    "fold_1\\inner_1_deep_2.joblib": "a41c4bf1549335dd265d723ceeb55ab00a7a555a7b1f31ddfce8cc69acee4a84",
+    "fold_1\\inner_1_training_winners.csv": "ad849836ea0587d24ec2d8adbc53e7044898b427c31d6bb3a152a3f5c4333200",
+    "fold_1\\inner_1_winner_training_oof.csv": "cac54bc69adb7481d37d69c934f74281ef2df61f86ef68ee7fff3978c004e986",
+    "fold_1\\inner_2.joblib": "b6a9c3b970276308b93d9efa6e6b0d5e25560925e2103c66d3986cf57924d508",
+    "fold_1\\inner_2_deep_0.joblib": "4fd5bd3981efc427bb80b8ab4be0d2be4503f070a238915483598a999cf3ce90",
+    "fold_1\\inner_2_deep_1.joblib": "7d1592def7e4567c86053c2e0a1e8b3306076a5a49a49d66e7b0db6d9f67fa88",
+    "fold_1\\inner_2_deep_2.joblib": "a1c6020a3a4294d587ade7081d37d3a6e92c90a2ed41dff598f935ab73980f7f",
+    "fold_1\\inner_2_training_winners.csv": "54a55b0d2afa9d47204e884f5119b91fc545804584c64c40d798374c89552849",
+    "fold_1\\inner_2_winner_training_oof.csv": "6d907d9d42af3a834c7f4ab637b8c92d6c77e3cdbcc95daf4a9856278f8eb3dc",
+    "fold_1\\inner_policy_oof_predictions.csv": "5a3421b545d419356fc5f58ecb41bd07c53ea51f02c080484e7dde0deff2d7f7",
+    "fold_1\\inner_policy_oof_winners.csv": "a3d19a335549d10ec4388b15137a027afedc4485c695ede1d75b44e2e7476fd4",
+    "fold_1\\outer_model.joblib": "02059db3583da5b5db1a7c06367ea4e5257ee83ce971bced6fe16a96447879ec",
+    "fold_1\\outer_training_winners.csv": "ef66f9f1c2003713ec84d351c9c9b840e99586d087a1b3e1b1a897b4a742db89",
+    "fold_2\\inner_0.joblib": "df74cf391e1bb6ed0330a00a02fbf3a531bc2b70079ff2264c445996babb8b29",
+    "fold_2\\inner_0_deep_0.joblib": "4e339df97a3e59975f00f7db98afaea4f175478699b5dadccf8d323641c6b40a",
+    "fold_2\\inner_0_deep_1.joblib": "9fa781858c9aa4668080e369abe3a2fda7b97030d8c1e4ef4531437ddae47120",
+    "fold_2\\inner_0_deep_2.joblib": "06c4f1ad4959ee8c92f1beb133aec67234e2f06a66d473e0140c28cd244f7e8a",
+    "fold_2\\inner_0_training_winners.csv": "0302e82aba7fd57b724b8be1989c44058637578efb743c44b6d8d7bb44871ed7",
+    "fold_2\\inner_0_winner_training_oof.csv": "28953691b7d66c1d9788506f5be1a16dbd57a2bdcd39bf894e799f28e7985210",
+    "fold_2\\inner_1.joblib": "37e1a221b1a042411e20fe336806329305f7c6a68bfadcc5657297c009180a61",
+    "fold_2\\inner_1_deep_0.joblib": "5cafa7dc96ca72781f856ed413233b09b4f9e9bf66ffe68803eae45f4dc15468",
+    "fold_2\\inner_1_deep_1.joblib": "7202111179105c50afe83d6ddd112ad4079d10167f9a11c43a9f3ca600a1198f",
+    "fold_2\\inner_1_deep_2.joblib": "2ac4efd49bad97e7d1de3334acaff495f9ef566f8f2fdcf1500eaa958d1d416e",
+    "fold_2\\inner_1_training_winners.csv": "be993cb8511e8008e4ae946f3fb206dff1d7823929bc0369b996eef5f239d529",
+    "fold_2\\inner_1_winner_training_oof.csv": "2c24a268cdde200242175242c8e13c70a46884c7b5fe92ba9db6e453988e695d",
+    "fold_2\\inner_2.joblib": "8706de02d7deea53aa857aace73407070be143186bd62f726be70223c6b313ff",
+    "fold_2\\inner_2_deep_0.joblib": "59b2491bb06094b7c89f22bf704e5aa2bfe79b41c74b552220a3560252495fd4",
+    "fold_2\\inner_2_deep_1.joblib": "b2ba6f38e66b07afa1b0331cb40722b8a8f842860d89b90c0ceb5f8fed19964d",
+    "fold_2\\inner_2_deep_2.joblib": "26585a619dcaa698545851cf05244c280b8a183667a1d3cfa8f15b0fe29caa70",
+    "fold_2\\inner_2_training_winners.csv": "f09ca4367b37fec5c631c3d18b5bab932058592066a897c4490ae8e53ba04a1c",
+    "fold_2\\inner_2_winner_training_oof.csv": "7fc8dc8f275b2916f4bd7da8f96b887cae74002e869180596fc2ff4c791c934e",
+    "fold_2\\inner_policy_oof_predictions.csv": "8904660000500abf5e945f4dbbd78643da04a474edbcba200c4c26d530c797fb",
+    "fold_2\\inner_policy_oof_winners.csv": "e1e27ce7f9c06950cf36ada0a0165bf5830dca18977497299149a1af5a8c9363",
+    "fold_2\\outer_model.joblib": "da13540b3880c01a04af24269bfe126cbf2aaa6a014f70fa2c5b3bfc0ded36e6",
+    "fold_2\\outer_training_winners.csv": "a383bfbad4c356221133e83e8d048cc41b67d6c5dc3beace2db4ebd11b9c05f8",
+    "fold_3\\inner_0.joblib": "f8740a6c5d404d72be87f030eb92e01ca5a7f8cb6de20dbe150df2ab5b8c0795",
+    "fold_3\\inner_0_deep_0.joblib": "c9df13178c81643beea722269dfa4299017143a59846285e269e1bfe7e3d064f",
+    "fold_3\\inner_0_deep_1.joblib": "d57dbc8e9172f0c559a5b5ead9d10af91f6143039877b8bdc15aa1807cc6fa78",
+    "fold_3\\inner_0_deep_2.joblib": "75efc8a5ad6c69cf5498a8052dc6bb6eb1a1e9b935b2278a42dfa988a180dde0",
+    "fold_3\\inner_0_training_winners.csv": "820e20d6c2088935b8d93ffed74340935d8b88734832919a797b1879720c90c6",
+    "fold_3\\inner_0_winner_training_oof.csv": "8112cda2d18e3eed661bca089f0b05dcfe836ddbe631c8340b0c25d7d810e71d",
+    "fold_3\\inner_1.joblib": "1dba8f369aaa521f53e401a847128a18f13b69ea566c4523472ec695b1840b9f",
+    "fold_3\\inner_1_deep_0.joblib": "fca2cd32486e07ae8c4b2d8889d9412a24c8cfe85abbffa221ea38f73abbc00f",
+    "fold_3\\inner_1_deep_1.joblib": "08f6abf4bfd5f22d775ed131a66839ee7268fec738e3612958065e0329571118",
+    "fold_3\\inner_1_deep_2.joblib": "b057991965860aac2ee0cac489732177fd385cbfb0b55a345718948c272bb8d7",
+    "fold_3\\inner_1_training_winners.csv": "48a6c3e071c3eaf750e115c98dd13548c14a76b38c80f09f891ce7b8426f18ba",
+    "fold_3\\inner_1_winner_training_oof.csv": "bf6bec8c5ad519d583edc1b3f518c9cdd01205c928e77d5bca39070b0ca1048f",
+    "fold_3\\inner_2.joblib": "b2a0a270be4838cc515fa830cc64e23af6e5c1e7b45f53d2ce6e7b834cb07a6a",
+    "fold_3\\inner_2_deep_0.joblib": "5b2cc8727ef78c9fe0a298580c3545cd633fcf51acf559dff6743dca0f15bf5b",
+    "fold_3\\inner_2_deep_1.joblib": "946c9e3460518167a95968736e219c24ca6920d9ba4eea44b9e60bbb79c18937",
+    "fold_3\\inner_2_deep_2.joblib": "7fa4f118f9a75cad578a03199c697b915c05a549d4f6e36e17afd411ff182f4b",
+    "fold_3\\inner_2_training_winners.csv": "1710579e3d22b1e9bfa0261cf538611fd0c474a3fac97e9c8559cc92802d71b6",
+    "fold_3\\inner_2_winner_training_oof.csv": "0c984f84bb88d9bdd091acee2b1cc61850dd41628d075a4968fe011b8d5cf75b",
+    "fold_3\\inner_policy_oof_predictions.csv": "751c88fb9f94c45c343b8210f1af69e8409dc44ea8e5a768685f4863f611184f",
+    "fold_3\\inner_policy_oof_winners.csv": "6d2840053a19466dc5fa9d6a5e05b632f787bcf12f60f3d14dfc6875a1684d1c",
+    "fold_3\\outer_model.joblib": "7ced13683ef497d61b4bf3adae0bc8380a27882f0046a56063c394b2c93db92f",
+    "fold_3\\outer_training_winners.csv": "9d4e8184a3866cf262e6fab4ca91cd126c03e5493ed56ea887fe30141d16cde8",
+    "fold_4\\inner_0.joblib": "eee99d0f04489a6ef33e365ba2001b97834dc31d5480b13008362dbf455a8fbc",
+    "fold_4\\inner_0_deep_0.joblib": "aa8a0fcc6248cce3e5bfb2da2cce90ca504cd18ff6e217feeb49d046c3842cb6",
+    "fold_4\\inner_0_deep_1.joblib": "d8f307ccbc311129e6c132e459e6731f6b65301ecc57472f8eebe7af20a81b6e",
+    "fold_4\\inner_0_deep_2.joblib": "7ce5418105a721569135ba4f57530aad524097832c6a7f02704be2e54cb24d54",
+    "fold_4\\inner_0_training_winners.csv": "41ef09d80a5940d1f68a0affc959a8a0403d2ae6d83c2bd4865c13613c7af8b7",
+    "fold_4\\inner_0_winner_training_oof.csv": "43a48c67841c094889e695b1a9f20e705c73cebc2a80e9a561a36737f328c140",
+    "fold_4\\inner_1.joblib": "d27014f036aba664a02700f501597d10d90312b57b5ff4a335582e74a7ff3d81",
+    "fold_4\\inner_1_deep_0.joblib": "ad8ec892f94d407158eb36b0d8fbfb95d7666b31e3f43893f7f8aed4539412f9",
+    "fold_4\\inner_1_deep_1.joblib": "efdd75475c5afd1b038854a11f425d812ab1da47fdc283f0f213f8f451933e3c",
+    "fold_4\\inner_1_deep_2.joblib": "5f3847a3e4ab2f6ee74f5a7652d1e2456c9f4952d5093b0d6188dd9a6ae761fb",
+    "fold_4\\inner_1_training_winners.csv": "34e4d3166d9a2cc280c94096ce4b7d8f3bb1e78ce64e468149cf29691c01a31c",
+    "fold_4\\inner_1_winner_training_oof.csv": "bb567595e21536963c54ca9bf527c143627238c0c5f42d6a6cc905f024d2c261",
+    "fold_4\\inner_2.joblib": "a5c84a27b752967233eca95a6b89cc7d67a8065fe3f38d643ae685a7822f9c6d",
+    "fold_4\\inner_2_deep_0.joblib": "d66821c69ab6f300241af357c6d919c959a2f5a3bcd486b016b5923601bf5102",
+    "fold_4\\inner_2_deep_1.joblib": "0a64bd8652705a2a0252351501e9a0bc7550d3f3a61da8a3fd47247354f0f5b3",
+    "fold_4\\inner_2_deep_2.joblib": "3bba16c23579324a5ea48045a56bdec1b9653fa97b4fc6c70e869965b7ab94a5",
+    "fold_4\\inner_2_training_winners.csv": "089a51393aeea502b866d27f8f398c1914b72532f776bf434804baa6f65eca80",
+    "fold_4\\inner_2_winner_training_oof.csv": "28ebba56196a82239be97b3f99f7c03e2ab22025b16363a2e3da01626c2aa737",
+    "fold_4\\inner_policy_oof_predictions.csv": "0824a583f0944ce6e52b2b8c8eed974c7a2fc46de1b289a33ac29746558b5393",
+    "fold_4\\inner_policy_oof_winners.csv": "baf2f3578012db29f9ad663d74416bb2c08be4520da923f7b0f727cf8076ecd2",
+    "fold_4\\outer_model.joblib": "3c67a5a0a1804516a77d7906b6ff4791286ba94cd324aeead76b43bdf4dd56e6",
+    "fold_4\\outer_training_winners.csv": "0e8f6ad8313d8aeab58973ae245a3106975c4fa0cd38ba31de9e2f0f9a0c1bc3"
+  }
+}

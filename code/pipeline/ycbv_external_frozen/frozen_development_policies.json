@@ -1,0 +1,38 @@
+{
+  "A_delta_rank": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "B_fixed_residual": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "C_state_residual": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "D_joint_full": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "C_state_joint_gate": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "D_joint_legacy_gate": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  }
+}

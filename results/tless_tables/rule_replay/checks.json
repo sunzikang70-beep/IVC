@@ -1,0 +1,8 @@
+{
+  "input_files_unchanged": 20,
+  "replay_A_D_exact": true,
+  "decomposition_exact": true,
+  "oracle_includes_initializer": true,
+  "no_training": true,
+  "no_threshold_tuning": true
+}

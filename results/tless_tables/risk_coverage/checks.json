@@ -1,0 +1,8 @@
+{
+  "A ordinary ranking_consistent_across_points": true,
+  "B fixed residual_consistent_across_points": true,
+  "C state residual_consistent_across_points": true,
+  "D joint (ours)_consistent_across_points": true,
+  "geometric_selector_targets_with_positive_gain": 1340,
+  "targets_total": 1686
+}

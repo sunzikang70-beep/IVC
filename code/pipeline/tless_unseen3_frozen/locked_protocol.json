@@ -1,0 +1,299 @@
+{
+  "status": "LOCKED_BEFORE_NEW_CANDIDATES_AND_LABELS",
+  "protocol": "external_model_origin_decoupled_v1",
+  "equation": "R_prime=Q@R; t_prime=t+u; Q/u in existing internal camera basis; translations meters internally",
+  "rotation_pivot": "model-coordinate origin, not scene camera origin or newly estimated centroid",
+  "regimes": {
+    "native": [
+      0.0,
+      0.0,
+      20261016
+    ],
+    "mild": [
+      5.0,
+      5.0,
+      20261016
+    ],
+    "hard": [
+      15.0,
+      15.0,
+      20261017
+    ]
+  },
+  "coupling": "original identity/regime/selected_index/namespace_seed and Q/u unchanged",
+  "observation": "reuse original public pose and predicted mask indexes and replay original method depth; no reassociation",
+  "candidates": {
+    "methods": [
+      "protocolB_e2e_initial_pose",
+      "protocolF_se3_trust_p2p_s025",
+      "protocolF_se3_trust_p2p_s050",
+      "protocolF_se3_trust_p2p_s100",
+      "protocolF_se3_trust_filtered_s025",
+      "protocolF_se3_trust_filtered_s050",
+      "protocolF_se3_trust_filtered_s100"
+    ],
+    "scales": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "max_rotation_deg": 1.0,
+    "max_translation_mm": 5.0,
+    "unchanged_trunks": true
+  },
+  "training_objects": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30
+  ],
+  "excluded_objects": [
+    5,
+    13,
+    18,
+    21,
+    27
+  ],
+  "planned_cases": 867,
+  "matched_cases": 733,
+  "matched_physical_instances": 629,
+  "conditions": [
+    [
+      "native_depth",
+      0.0
+    ],
+    [
+      "local_outlier_30pct",
+      0.3
+    ]
+  ],
+  "expected_bop_labels": 10262,
+  "label_budget": "all seven poses in every matched condition; no old/new model winner filtering",
+  "evaluation_depth": "native_sensor_depth; original BOP19 120 thresholds and image-width-normalized MSPD",
+  "feature_schema": "existing 191 observable geometry/state/tail features; round-trip CSV; inf normalized to missing",
+  "outer_folds": [
+    {
+      "fold": 0,
+      "training_objects": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30
+      ],
+      "validation_objects": [
+        6,
+        12,
+        17,
+        26
+      ]
+    },
+    {
+      "fold": 1,
+      "training_objects": [
+        2,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        25,
+        26,
+        28,
+        29
+      ],
+      "validation_objects": [
+        3,
+        9,
+        24,
+        30
+      ]
+    },
+    {
+      "fold": 2,
+      "training_objects": [
+        2,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        20,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "validation_objects": [
+        7,
+        15,
+        19,
+        23
+      ]
+    },
+    {
+      "fold": 3,
+      "training_objects": [
+        3,
+        6,
+        7,
+        9,
+        11,
+        12,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30
+      ],
+      "validation_objects": [
+        2,
+        4,
+        10,
+        14,
+        25
+      ]
+    },
+    {
+      "fold": 4,
+      "training_objects": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26,
+        30
+      ],
+      "validation_objects": [
+        11,
+        16,
+        20,
+        28,
+        29
+      ]
+    }
+  ],
+  "inner_folds": 3,
+  "winner_calibration_deep_folds": 3,
+  "models": "retrain existing raw heads/selective calibration/state residual guards and selected-risk models from scratch",
+  "primary_method": "selected_risk_stratified",
+  "controls": [
+    "conditional_residual_legacy",
+    "conditional_residual_joint",
+    "stratified_only",
+    "selected_risk_only"
+  ],
+  "tuning": "original policy grids and constraints; training folds only; disabled if none feasible; no outer retuning",
+  "scope": "inspected development only; not independent confirmation; not official benchmark leaderboard",
+  "missing": "all planned cases retained without replacement; matched and planned-denominator AR reported",
+  "preserve": "old outputs and reserved88 unchanged; no cloud/real-platform/excluded-object inference",
+  "ledger_overlap": "three original missing-pose ledger rows share later-reserved images; denominator only, no observation loading/inference",
+  "timeout_seconds_per_child_stage": 10800,
+  "created_at_utc": "2026-10-20T02:46:02.418303+00:00",
+  "manifest_sha256": "7f49fc255f09c1f10d9050a21524ab9848f872bb0a8dbc644016fd686a07a1c1",
+  "source_hashes": {
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\gtfree_real_acceptance_development_inputs_20260915\\frame_manifest.csv": "ab36a77a4bd5a7a4fe834d285cb298868858f45551e8b222f12f41c54eb0d463",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\gtfree_real_acceptance_development_inputs_20260915\\real_inputs_validation_trials.csv": "b5bba6b08a9671b77445d46b000f46b4627990b29d02e5d0fa50af6648dd3cd2",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\gtfree_unseen_full_inputs_20261016_mild\\frame_manifest.csv": "c8f475305e30080d011185ac059ad59862f5d5542b20533b4f90909113f33bdf",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\gtfree_unseen_full_inputs_20261016_mild\\real_inputs_validation_trials.csv": "266d6d08491d84e9b7d0ff735783d2f988d22f7a876c661ba01da27abd9b611f",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\gtfree_unseen_full_inputs_20261016_hard\\frame_manifest.csv": "b35e3789fd1462120e096f054fc292b14d33c6980acca2d9b492cf7d19ee875e",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\gtfree_unseen_full_inputs_20261016_hard\\real_inputs_validation_trials.csv": "3a6f4d3b7a8081a51629f064680868ca4e746a808b70f325564228c26a7ed92c",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\winner_instance_expansion_20261020_r1\\inputs\\frame_manifest.csv": "445140e62b504bbc0d26c1132c81dd5e7dd3ae416ff7a33a6db338f0c44f1d45",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\winner_instance_expansion_20261020_r1\\inputs\\real_inputs_validation_trials.csv": "e05a5897841d5fa4c61104407bbb2c41ccc883fc6d89b01652a2d971802da9e1",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\winner_instance_plan_20261020_r1\\reserved_instances_do_not_evaluate.csv": "139125b39ce58073778d0203a5ee18ebc48fceb57394770e478fac2f507e45c3",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\run_decoupled_development.py": "0d3f52a24ffe5b35ba29f7ccf349b668797b8ae1d935b36b8b08e456d1b24008",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_decoupled_group_oof.py": "4f9411a535a10b264c7f4e73e009f2ad7b5c97844da5e88e241bd01571430df5",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\test_decoupled_development.py": "082c03c244fb155fc9e64854867dba3b865cbe63118ed4d89dd3651ba554f9ab",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\decoupled_checkpoint_recovery.py": "9bc156845a128a13af8f0ae42142ae441292383d21b3fdbe6a6546ba84cbced5",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\pose_perturbation_protocols.py": "89b2a9873243cb4b14311f4c3e452ff82ed504fc9f0508d26c84001fdde4cc18",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\winner_training_data_io.py": "dcd25f529a8280265056d6c84ddef5dff4d301298d884278ab229107192843f8",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\protocolG_observation.py": "1da9a2969950eda1d03ee3910f59dd4aad5db33fea0fae338d9779d2770af62d",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\run_frozen_real_inputs_validation.py": "9f4e85d78dbeb84db8341f8d1e01a38559137de04396a0abc7b7a68b3dcc6e46",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\run_frozen_unseen_validation.py": "83bba68b2820c544bab6ca5c35f3d40697300bb915947a8aaa34edb70c3827f9",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\run_p2p_reliability_filter_development.py": "781933bdc87c54c3828beb521fa4aff03acaf4db6fd7302210e2f3d8488e853f",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\run_se3_trust_region_geometric_development.py": "0396d4ab7e542236fe5cf7ea5341ed4b6cbcbc2f066633500add55307fc587ff",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\extract_bop_aware_tail_features.py": "899943d89957dd2baf099c9501f3364414989b7eecbee665df5dd4a5db22b016",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\extract_protocolG_render_compare_features.py": "ad9fda03f405d02422f0cc19a02c66010d27e065792e90879e4064ddd85f0644",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_group_oof.py": "ec628b3f17405cdf6f4bc06d629a3e8ba68b81cdadc7a1f1c27739b419d18406",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_tail_risk_v2.py": "f569b048fc419602903a5d173b1e0b8989995b9681aa68000a99748e2ca38983",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_selective_calibration.py": "08e6b4e9b5c6febfdcfb33f7749b0b3d5a5378d6c88b26b991d951af980689b8",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_state_residual.py": "5c75bd6feea03c1964f4490bead3062bebac724195fee159a2960a2a7afb0bdf",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\train_bop_aware_selected_risk.py": "cc6abc2c126e457400e4c13a1d35294dc112bb0d964730c096c712e1d3ffecfe",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\evaluate_bop_metrics_controlled.py": "e7aa35f9ca319d12ace720ffa59ae689324e6857b36a1f84daed4456f25e1870",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\bop_thresholds.py": "be6a915605404eef4515229463bfd5b6a9db642b9c878ebdec4f867110ca5077",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\bop_aware_tail_risk_v2_plan_20261019.json": "47d1776c325342bd3f9fcc14339d20eb7da6dc1c071c7431dee7c82beeb2a6cc",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\bop_aware_state_residual_plan_20261019.json": "42862b28851239ddaea79de0115ce0e2125cf309b97508ee3c1290be3d1cfe34",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\bop_aware_selected_risk_plan_20261019.json": "bf1a451d34289c6e6ce7e332e13413621cd25a0f2f49d8677f3d36aebeb7cc71",
+    "D:\\6D_pose\\external_predictions\\megapose_cnos_tless_2023\\cnos-fastsammegapose_tless-test_94e046a0-42af-495f-8a35-11ce8ee6f217.csv": "4a54873537245990f512535682a02b07b259c9d2401b5c463d71d676ff00b8b8",
+    "D:\\6D_pose\\external_predictions\\megapose_cnos_tless_2023\\fastSAM_pbr_tless.json": "db010fbce92149a54ae7a252176d6dee80823353a7e5d704c0f33657c5b1ecec",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\bop_metrics_p2p_reliability_dual_filter_development\\frozen_method_config.json": "8c8e36582bf60b767ad92740c4f6f41d4c78c834cf2e0df64f28f2069827bcbd",
+    "D:\\6D_pose\\reliability_weighted_icp_hard_validation\\reliability_weighted_icp_hard_validation.py": "9b4de475807364eaa75ddeb97defd01262236b1042f742f61f33e9fbccb12f2b",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\paired_pivot_smoke_20261020_r1\\state.json": "2029280e378dfa151e9a9b52731769c557b2205a34aa213b9b6de4768241ccaf",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r2\\state.json": "8b5bc32af603c905fa5665dc836c407e274fa07823e091b8c32ac0fc33629c46",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r2\\locked_protocol.json": "6d16a4181b086fe3101f0f4486e7de1cdbb9c1e113092d7678cf7d50f3324e90",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r2\\evaluation_sources_pre_BOP.json": "07b2feb566778dc51b542b16828e49c1a976d77874dcd77e85801dfa999a98ca"
+  }
+}

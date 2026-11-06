@@ -1,0 +1,172 @@
+{
+  "status": "LOCKED_BEFORE_OBSERVABILITY_FEATURES",
+  "locked_at_utc": "2026-11-05T01:56:30.898497+00:00",
+  "protocol": {
+    "version": "observability-residual-gate-v1",
+    "data": "22 T-LESS development objects of decoupled_development_20261020_r4 only; 1466 conditions x 6 candidates",
+    "outer_folds": "the 5 object folds stored in group_oof/outer_oof_predictions.csv (outer_fold column)",
+    "nested": "inside each outer training set: base models refit; 3 GroupKFold object folds give the out-of-object base predictions and classifier scores used to fit the residual model; 3 further object cross-fits give the nonnegative offset b; held-out objects are never used for fitting",
+    "base_model": {
+      "regressors": [
+        "delta_AR_VSD",
+        "delta_AR_MSSD",
+        "delta_AR_MSPD",
+        "delta_ADD_S_mm"
+      ],
+      "classifiers": [
+        "adds_regression",
+        "vsd_regression",
+        "mssd_regression",
+        "mspd_regression",
+        "mean_ar_gain"
+      ],
+      "params": {
+        "max_iter": 60,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 25,
+        "learning_rate": 0.07,
+        "l2_regularization": 5.0,
+        "random_state": 20261019
+      },
+      "preprocessing": "median imputation with indicators, standardisation, clip to [-20, 20]",
+      "weights": "each object total weight 1, split equally over its physical instances, then rows"
+    },
+    "utility": "u = mean(dAR_VSD, dAR_MSSD, dAR_MSPD) - 0.005 * dADD-S / 5 mm",
+    "residual": {
+      "target": "adverse utility residual r = u_hat - u (out-of-object)",
+      "quantile": 0.75,
+      "params": {
+        "max_iter": 60,
+        "max_leaf_nodes": 5,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.06,
+        "l2_regularization": 5.0,
+        "max_bins": 64,
+        "random_state": 20261019
+      },
+      "inputs": "state features + 4 predicted changes + 5 classifier scores",
+      "width": "w = max(0, q_hat(z) + b); score L = u_hat - w"
+    },
+    "arms": {
+      "A": {
+        "base": "X191",
+        "residual": null,
+        "role": "ranking by base predicted utility, no correction"
+      },
+      "A_obs": {
+        "base": "X191+OBS",
+        "residual": null,
+        "role": "same, base model also given the observability state"
+      },
+      "D": {
+        "base": "X191",
+        "residual": "Z26",
+        "role": "current SARef correction (26 state features)"
+      },
+      "D_obs": {
+        "base": "X191",
+        "residual": "Z26+OBS",
+        "role": "correction given the observability state, base without it"
+      },
+      "SARef_obs": {
+        "base": "X191+OBS",
+        "residual": "Z26+OBS",
+        "role": "candidate method: base and correction both given the state"
+      }
+    },
+    "state_sets": {
+      "Z26": "26 STATE_NAMES of the paper",
+      "OBS": [
+        "obs_inliers",
+        "obs_inlier_fraction",
+        "obs_p2plane_rms_mm",
+        "obs_inv_cond",
+        "obs_log10_lmin",
+        "obs_n_weak",
+        "obs_rot_block_min",
+        "obs_trans_block_min",
+        "obs_std_weak_mm",
+        "obs_std_trace_mm",
+        "upd_rayleigh",
+        "upd_weak_fraction",
+        "upd_std_along_mm",
+        "upd_snr",
+        "ms_valid_runs",
+        "ms_spread_norm",
+        "ms_to_trunk_norm",
+        "ms_frac_agree",
+        "ms_rmse_std_mm",
+        "ms_cand_to_medoid_norm",
+        "ms_cand_toward_medoid_norm",
+        "obs0_inliers",
+        "obs0_inlier_fraction",
+        "obs0_p2plane_rms_mm",
+        "obs0_inv_cond",
+        "obs0_log10_lmin",
+        "obs0_n_weak",
+        "obs0_rot_block_min",
+        "obs0_trans_block_min",
+        "obs0_std_weak_mm",
+        "obs0_std_trace_mm",
+        "dobs_inliers",
+        "dobs_inlier_fraction",
+        "dobs_p2plane_rms_mm",
+        "dobs_inv_cond",
+        "dobs_log10_lmin",
+        "dobs_n_weak",
+        "dobs_rot_block_min",
+        "dobs_trans_block_min",
+        "dobs_std_weak_mm",
+        "dobs_std_trace_mm"
+      ]
+    },
+    "selection": "per condition: argmax score over candidates with features_valid, pose_changed and observation_support >= 0.01; conditions ranked globally by that score; the top c accepted",
+    "metric": "object-equal mean dAR (pp, mean of VSD/MSSD/MSPD AR changes, 0 if not accepted) averaged over coverage c = 0.05, 0.10, ..., 1.00 (gain AUC)",
+    "bootstrap": {
+      "unit": "object",
+      "draws": 20000,
+      "seed": 20261104,
+      "interval": "percentile 95%"
+    },
+    "primary": "SARef_obs - A_obs",
+    "co_primary": "SARef_obs - A",
+    "decision": "PASS iff the 95% lower bound of BOTH differences in gain AUC is > 0; otherwise FAIL and stop",
+    "after_pass": "freeze SARef_obs; confirm on a dataset never used before, under a protocol fixed before running",
+    "after_fail": "no held-out evaluation; the contribution statement must be revised to what the data support",
+    "reported_not_decisive": [
+      "D - A (reproduction of the known result)",
+      "D_obs - A_obs",
+      "A_obs - A",
+      "max gain, AR-drop and ADD-S-increase rates at matched coverage, gain at matched AR-drop rate"
+    ],
+    "omitted_for_all_arms": [
+      "training-support (domain) gate",
+      "risk / ADD-S upper / component / branch gates",
+      "low-support fallback width",
+      "probability calibration and the 0.064 bias guard"
+    ]
+  },
+  "hashes": {
+    "D:\\6D_pose\\codex_paper_workspace\\work\\observability_residual_gate.py": "7f8a71c46136e7ce73f099e6b217f4fa44301800197c8ef291b6903dc78d4701",
+    "D:\\6D_pose\\codex_paper_workspace\\work\\extract_observability_state_features.py": "033af15e24ccb5be8eb71957c9c6e1c351b8db5468c1e981e0dacdde6bfcdaa3",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\labeled_candidate_data.csv": "e8cf5044a86094d5749f266bdd6e2709a5bfec04b7887dd2773ea61e56dd8922",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\feature_schema.json": "d8c2c57b190d58eb4c156f9c93fe453cc7962df8a2ab67e8a9b7905a34e2fc31",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\outer_oof_predictions.csv": "3156c7fabcfa88024092471375e9a626d5f48f2f92d862adf9958e5cf333641a",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\inputs.csv": "4038303498e5d7b75f766d9fffb63232252b7f67aca02aa604d328c1c9e13787",
+    "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\trials.csv": "e8479615663c3625254dc7393ece674af4db7f5ab56d7ced2288ade94499df0f"
+  },
+  "extractor_config": {
+    "version": "observability-state-v1",
+    "inlier_threshold_m": 0.01,
+    "min_inliers": 30,
+    "normal_knn": 30,
+    "weak_ratio": 0.05,
+    "multistart_k": 8,
+    "multistart_rotation_deg": 3.0,
+    "multistart_translation_mm": 3.0,
+    "multistart_seed": 20261105,
+    "agree_fraction_of_diameter": 0.02,
+    "model_subsample": 500
+  },
+  "extractor_config_sha256": "e34465cda0e12a0f7f4ecb415357f6cfb0677133a5f41cafdccbb63a9464ec85"
+}

@@ -1,0 +1,72 @@
+{
+  "model_path": "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\development_candidate.joblib",
+  "model_sha256": "a3836d3bfbb0dda4927578fdfb53389830fe0cff2bdc439f46de8cdcb2a5917c",
+  "training_objects": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30
+  ],
+  "holdout_objects": [
+    1,
+    8,
+    22
+  ],
+  "policies": {
+    "conditional_residual_legacy": {
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "conditional_residual_joint": {
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "stratified_only": {
+      "policy_id": 11,
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "selected_risk_only": {
+      "policy_id": 11,
+      "risk_limit": 0.3,
+      "component_loss": 0.01,
+      "continuous_weight": 0.005,
+      "disabled": false
+    },
+    "selected_risk_stratified": {
+      "policy_id": 0,
+      "risk_limit": 0.1,
+      "component_loss": 0.0,
+      "continuous_weight": 0.0,
+      "disabled": true
+    }
+  },
+  "policy_tuning": "none_on_holdout",
+  "raw_plan_sha256": "47d1776c325342bd3f9fcc14339d20eb7da6dc1c071c7431dee7c82beeb2a6cc",
+  "residual_plan_sha256": "42862b28851239ddaea79de0115ce0e2125cf309b97508ee3c1290be3d1cfe34",
+  "winner_plan_sha256": "bf1a451d34289c6e6ce7e332e13413621cd25a0f2f49d8677f3d36aebeb7cc71"
+}

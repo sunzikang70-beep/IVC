@@ -1,0 +1,15 @@
+{
+  "source": "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_frozen_unseen5_20261021_r1",
+  "source_state_sha256": "5e0f853bf5d43fa57fc1ec0acfe47af62a00d455b6737a84f66b5feeb2d99a8b",
+  "objects": [
+    5,
+    13,
+    18,
+    21,
+    27
+  ],
+  "candidate_pose_rows": 9240,
+  "feature_rows": 7920,
+  "feature_names": 191,
+  "purpose": "reuse completed GT-free candidate generation after metadata-contract repair"
+}

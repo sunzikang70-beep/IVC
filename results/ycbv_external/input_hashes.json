@@ -1,0 +1,16 @@
+{
+  "D:\\6D_pose\\codex_paper_workspace\\work\\run_decoupled_frozen_external_ycbv.py": "eabcbd17d6238a7019fac7983fe881df3b8480232079f5bd60c3d4272b789be8",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\analyze_decoupled_frozen_external_ycbv.py": "c404e58ea63615cd2d78f377a1761f46b304ec5cbd105d1bc703382c40686357",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\run_decoupled_frozen_unseen5.py": "c471c33b9d751b494788a5f0c706f92761be202af481230ee3d62bb67c021022",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\run_same_bank_residual_ablation.py": "999ef317edc11186b90d362822b286cc5062dc3effd517dc52389a613e880b49",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\evaluate_bop_metrics_controlled.py": "e7aa35f9ca319d12ace720ffa59ae689324e6857b36a1f84daed4456f25e1870",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\bop_aware_state_residual_plan_20261019.json": "42862b28851239ddaea79de0115ce0e2125cf309b97508ee3c1290be3d1cfe34",
+  "D:\\6D_pose\\codex_paper_workspace\\work\\bop_aware_selected_risk_plan_20261019.json": "bf1a451d34289c6e6ce7e332e13413621cd25a0f2f49d8677f3d36aebeb7cc71",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\same_bank_residual_ablation_20261026_r1\\frozen_development_policies.json": "4c7dba189e583e1278e865da6142d443e4374dfc935b09f6697d00d8fef70798",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\development_candidate.joblib": "a3836d3bfbb0dda4927578fdfb53389830fe0cff2bdc439f46de8cdcb2a5917c",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\decoupled_development_20261020_r4\\group_oof\\state.json": "bec93f2ee89ce448d4247aff6718ce6111ef03ba4031278f813406888c5b3f2d",
+  "D:\\6D_pose\\bop_datasets\\YCB-V\\cosypose-eccv20-syntreal-1view_ycbv-test_e0fe67ff-0117-401d-9830-791ee9a353e6.csv": "7bc61fd6af9f49c89592d7bd297e931a7b9f296df54ca3f4da1086474f25ba6a",
+  "D:\\6D_pose\\bop_datasets\\YCB-V\\cosypose-eccv20-syntreal-1view_ycbv-test_8dde7029-85bc-49a0-bae1-15cab9b505dd.json": "0225e05c02ed7455472ffba1a50895e48f7b4f7cdc4bec8a9a05678681691d79",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\ycbv_full_pool_external_20260924\\merged\\frame_manifest.csv": "1e486b0bb5eba271cd42c451b32a737e0a2dd4b6798282dc05805836be429a32",
+  "D:\\6D_pose\\codex_paper_workspace\\outputs\\ycbv_full_pool_external_20260924\\merged\\real_inputs_validation_trials.csv": "2c0e5c351d44fec6fa84c80739f2438b450d7902f6e168b2986f211f88c38e55"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "POSTHOC_DIAGNOSIS_ONLY",
+  "policy": {
+    "risk_limit": 0.3,
+    "component_loss": 0.01,
+    "continuous_weight": 0.005,
+    "disabled": false
+  },
+  "train": false,
+  "tune": false,
+  "candidate_generation": false,
+  "independent_confirmation": false,
+  "method_promotion": false,
+  "GT_oracles": "unattainable reference ceilings; initializer always available",
+  "estimand": "equal_object_AR",
+  "decomposition": "oracle_all - D = (oracle_all - oracle_inside_gates) + (oracle_inside_gates - D)",
+  "output": "D:\\6D_pose\\codex_paper_workspace\\outputs\\joint_optimization_review_20261026_r2",
+  "started_at": "2026-10-26T08:26:33.608398+00:00"
+}

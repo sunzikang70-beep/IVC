@@ -1,0 +1,28 @@
+{
+  "arms": 13,
+  "common_targets": 1686,
+  "targets_per_arm": {
+    "A ordinary ranking": 1686,
+    "B fixed residual": 1686,
+    "C state residual": 1686,
+    "D joint (frozen run)": 1686,
+    "D joint (ours)": 1686,
+    "Filtered P2P s0.25": 1686,
+    "Filtered P2P s0.50": 1686,
+    "Filtered P2P s1.00": 1686,
+    "Initial": 1686,
+    "Locked r4 primary (selected_risk_stratified)": 1686,
+    "P2P s0.25": 1686,
+    "P2P s0.50": 1686,
+    "P2P s1.00": 1686
+  },
+  "joint_frozen_vs_samebank_max_abs_AR_diff": 0.0,
+  "joint_frozen_vs_samebank_action_mismatch": 0,
+  "bootstrap_draws": 20000,
+  "seed": 20261104,
+  "input_sha256": {
+    "frozen_unseen5": "f2de798b5152ef92514579a76803bcf2377fbe303f7f69ab9932e355722a23e7",
+    "frozen_unseen3": "f8dc15fa7e65ee88304d545622205c72cc1315067895286a3bc8174c955bb433",
+    "same_bank": "f64e53e3cad6e90ecbe4bd4b25c2bb1df5b7644d217d3223a485045481a1dd1b"
+  }
+}
