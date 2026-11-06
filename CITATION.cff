@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "SARef: code, frozen model and per-condition results"
+version: "1.0"
+date-released: 2026-11-06
+doi: 10.5281/zenodo.23998131
+license: MIT
+repository-code: "https://github.com/sunzikang70-beep/IVC"
+authors:
+  - family-names: Sun
+    given-names: Zikang

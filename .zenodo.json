@@ -1,0 +1,7 @@
+{
+  "title": "SARef: code, frozen model and per-condition results",
+  "creators": [{"name": "Sun, Zikang"}],
+  "license": "MIT",
+  "upload_type": "software",
+  "description": "Code, frozen model and per-condition results for 'SARef: Selective acceptance of local refinements for RGB-D 6D object pose estimation' (submitted to Image and Vision Computing)."
+}

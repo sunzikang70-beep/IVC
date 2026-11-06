@@ -1,5 +1,7 @@
 # SARef: selective acceptance of local refinements for RGB-D 6D object pose estimation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23998131.svg)](https://doi.org/10.5281/zenodo.23998131)
+
 This repository holds the code, the frozen model and the per-condition results behind the manuscript *SARef: Selective acceptance of local refinements for RGB-D 6D object pose estimation*, submitted to *Image and Vision Computing*.
 
 SARef builds six bounded candidate updates for an input pose: point-to-point (P2P) and reliability-filtered P2P registration, each with motion caps of 1/4, 1/2 and 1. Gradient-boosted models, frozen after development on 22 T-LESS objects, predict how each candidate changes BOP recall (VSD, MSSD, MSPD) and ADD-S. The candidate with the largest predicted utility is accepted only if it satisfies the support, risk and per-metric constraints; otherwise the input pose is kept.
@@ -76,4 +78,8 @@ Code: MIT (`LICENSE`). Data, model and result tables: CC BY 4.0 (`LICENSE-DATA`)
 
 ## Citation
 
-[Citation to be added after publication.]
+If you use this code or data, please cite the archived release:
+
+Z. Sun, SARef: code, frozen model and per-condition results, version 1.0, Zenodo, 2026. https://doi.org/10.5281/zenodo.23998131
+
+The citation of the article will be added after publication.
